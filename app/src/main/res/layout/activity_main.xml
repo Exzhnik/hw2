@@ -49,7 +49,7 @@
                 android:textSize="16sp"
                 android:visibility="visible" />
 
-        </LinearLayout>
+
 
 
     <LinearLayout
@@ -80,7 +80,8 @@
             android:contentDescription="@string/vkontakte"
             app:srcCompat="@drawable/vk" />
 
-    </LinearLayout>
+          </LinearLayout>
+        </LinearLayout>
     </ScrollView>
 
 </LinearLayout>
