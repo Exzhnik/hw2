@@ -17,6 +17,10 @@
         app:title="@string/app_name"
         app:titleTextColor="@android:color/black" />
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -77,6 +81,6 @@
             app:srcCompat="@drawable/vk" />
 
     </LinearLayout>
-
+    </ScrollView>
 
 </LinearLayout>
