@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Anatoliy Dvoryashin</string>
+    <string name="todo">TODO</string>
+    <string name="avatar" />
+    <string name="avatar_image">TODO</string>
+    <string name="card_resume">I am a beginner android developer. At 30, I decided to change the field of activity.  In my daily schedule I allocate time to learn a new profession.</string>
+    <string name="instagram">instagram</string>
+    <string name="telegram">telegram</string>
+    <string name="headhunter">HeadHunter</string>
+    <string name="github">github</string>
+    <string name="vkontakte">vkontakte</string>
+</resources>
