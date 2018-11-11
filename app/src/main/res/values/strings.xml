@@ -9,4 +9,6 @@
     <string name="headhunter">HeadHunter</string>
     <string name="github">github</string>
     <string name="vkontakte">vkontakte</string>
+    <string name="enter_mess">Enter a message</string>
+    <string name="send_message">Send Message</string>
 </resources>

@@ -60,15 +60,21 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
+                    android:importantForAutofill="no"
                     android:inputType="text"
-                    tools:text="send message"
-                    android:importantForAutofill="no" />
+                    tools:text="@string/enter_mess" />
 
                 <Button
-                    android:id="@+id/button"
-                    android:layout_width="match_parent"
+                    android:id="@+id/message"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Send Message" />
+                    android:backgroundTint="@android:color/transparent"
+                    android:text="@string/send_message"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
