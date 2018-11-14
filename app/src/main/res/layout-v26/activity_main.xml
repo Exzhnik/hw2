@@ -3,27 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible">
 
-    android:orientation="vertical">
-    
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/colorMe"
         android:minHeight="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
         app:title="@string/app_name"
         app:titleTextColor="@android:color/black" />
 
     <ScrollView
+        android:id="@+id/scrollview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
@@ -69,79 +70,62 @@
                     android:layout_marginEnd="15dp"
                     android:background="@color/colorAccent" />
 
+
+                <EditText
+                    android:id="@+id/send"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:hint="@string/enter_mess"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    tools:text="@string/enter_mess" />
+
+                <Button
+                    android:id="@+id/message"
+                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="15dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:text="@string/send_message"
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="bottom|center"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/send"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="15dp"
-                        android:layout_marginEnd="15dp"
-                        android:hint="@string/enter_mess"
-                        android:importantForAutofill="no"
-                        android:inputType="text"
-                        tools:text="@string/enter_mess" />
-
-                    <Button
-                        android:id="@+id/message"
-                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="end"
-                        android:layout_marginEnd="15dp"
-                        android:backgroundTint="@android:color/transparent"
-                        android:text="@string/send_message"
-                        android:textAlignment="textEnd"
-                        android:textAllCaps="true"
-                        android:textStyle="bold"
-                        android:typeface="normal" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="163dp"
-                        android:gravity="center"
-                        android:orientation="horizontal"
-                        android:visibility="visible">
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
 
 
-                        <ImageView
-                            android:id="@+id/imageView"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="bottom"
-                            android:layout_marginEnd="5dp"
-                            android:contentDescription="@string/telegram"
-                            android:foregroundGravity="center"
-                            android:visibility="visible"
-                            app:srcCompat="@drawable/telegram" />
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginEnd="5dp"
+                        android:contentDescription="@string/telegram"
+                        android:foregroundGravity="center"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/telegram" />
 
-                        <ImageView
-                            android:id="@+id/imageView2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="bottom"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginEnd="5dp"
-                            android:contentDescription="@string/instagram"
-                            android:scaleType="fitXY"
-                            app:srcCompat="@drawable/instagram" />
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:contentDescription="@string/instagram"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/instagram" />
 
-                        <ImageView
-                            android:id="@+id/imageView3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="bottom"
-                            android:layout_marginStart="5dp"
-                            android:contentDescription="@string/vkontakte"
-                            android:foregroundGravity="center"
-                            android:scaleType="center"
-                            app:srcCompat="@drawable/vk" />
-
-                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

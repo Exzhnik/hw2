@@ -11,5 +11,7 @@
     <string name="vkontakte">vkontakte</string>
     <string name="enter_mess">Enter a message</string>
     <string name="send_message">Send Message</string>
+    <string name="no_email_client_error">You need mail client to send email</string>
+    <string name="message_text_empty">Message is empty</string>
     <string name="enter_a_string_enter_mess">Enter a @string/enter_mess</string>
 </resources>
